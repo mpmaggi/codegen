@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({
 
 jobCommand(app);
 
-serverProcess = app.listen(2609, () => {
+serverProcess = app.listen(rocess.env.PORT || 2609, () => {
   console.log('Express server listening on port: %s', serverProcess.address().port);
 });
 
